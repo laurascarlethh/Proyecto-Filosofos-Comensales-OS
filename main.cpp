@@ -14,7 +14,7 @@ enum Estado { PENSANDO, HAMBRIENTO, COMIENDO };
 // =========================================================
 struct MonitorMesa {
     Estado* estados;                // Arreglo dinamico de estados
-    CRITICAL_SECTION cerrojo;       // Seccion critica para exclusión mutua nativa
+    CRITICAL_SECTION cerrojo;       // Seccion critica para exclusiÃ³n mutua nativa
 
     // Constructor: Inicializa la memoria dinamica y la seccion critica
     MonitorMesa() {
@@ -88,7 +88,7 @@ struct DatosHilo {
 };
 
 // =========================================================
-// FUNCIÓN QUE EJECUTA CADA HILO EN WINDOWS (DEV-C++)
+// FUNCIÃ“N QUE EJECUTA CADA HILO EN WINDOWS (DEV-C++)
 // =========================================================
 DWORD WINAPI accionFilosofo(LPVOID param) {
     DatosHilo* datos = (DatosHilo*)param;
@@ -111,7 +111,7 @@ DWORD WINAPI accionFilosofo(LPVOID param) {
 }
 
 // =========================================================
-// FUNCIÓN PRINCIPAL CON MENÚ INTERACTIVO
+// FUNCIÃ“N PRINCIPAL CON MENÃš INTERACTIVO
 // =========================================================
 int main() {
     int opcion = 0;
